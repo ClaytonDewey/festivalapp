@@ -1,0 +1,15 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-festivalapp-dev-121340-authRole",
+      "UnauthRoleArn": "arn:aws:iam::805058537464:role/amplify-festivalapp-dev-121340-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::805058537464:role/amplify-festivalapp-dev-121340-authRole",
+      "Region": "us-east-2",
+      "DeploymentBucketName": "amplify-festivalapp-dev-121340-deployment",
+      "UnauthRoleName": "amplify-festivalapp-dev-121340-unauthRole",
+      "StackName": "amplify-festivalapp-dev-121340",
+      "StackId": "arn:aws:cloudformation:us-east-2:805058537464:stack/amplify-festivalapp-dev-121340/fddf7250-a192-11ed-90e4-029362df7fe6",
+      "AmplifyAppId": "d2xewnphgnbc4i"
+    }
+  }
+}
