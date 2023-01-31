@@ -9,7 +9,8 @@
       "UnauthRoleName": "amplify-festivalapp-dev-121340-unauthRole",
       "StackName": "amplify-festivalapp-dev-121340",
       "StackId": "arn:aws:cloudformation:us-east-2:805058537464:stack/amplify-festivalapp-dev-121340/fddf7250-a192-11ed-90e4-029362df7fe6",
-      "AmplifyAppId": "d2xewnphgnbc4i"
+      "AmplifyAppId": "d2xewnphgnbc4i",
+      "AuthTriggerTemplateURL": "https://s3.amazonaws.com/amplify-festivalapp-dev-121340-deployment/amplify-cfn-templates/auth/auth-trigger-cloudformation-template.json"
     },
     "categories": {
       "auth": {
