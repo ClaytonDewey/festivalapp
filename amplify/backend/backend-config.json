@@ -1,10 +1,28 @@
 {
   "api": {
     "festivalapp": {
-      "dependsOn": [],
+      "dependsOn": [
+        {
+          "attributes": [
+            "UserPoolId"
+          ],
+          "category": "auth",
+          "resourceName": "festivalappc70e0400"
+        }
+      ],
       "output": {
         "authConfig": {
-          "additionalAuthenticationProviders": [],
+          "additionalAuthenticationProviders": [
+            {
+              "authenticationType": "AWS_IAM"
+            },
+            {
+              "authenticationType": "AMAZON_COGNITO_USER_POOLS",
+              "userPoolConfig": {
+                "userPoolId": "authfestivalappc70e0400"
+              }
+            }
+          ],
           "defaultAuthentication": {
             "apiKeyConfig": {
               "apiKeyExpirationDays": 7
@@ -62,6 +80,22 @@
   },
   "parameters": {
     "AMPLIFY_function_festivalappc70e0400PostConfirmation_GROUP": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "festivalappc70e0400PostConfirmation"
+        }
+      ]
+    },
+    "AMPLIFY_function_festivalappc70e0400PostConfirmation_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "festivalappc70e0400PostConfirmation"
+        }
+      ]
+    },
+    "AMPLIFY_function_festivalappc70e0400PostConfirmation_s3Key": {
       "usedBy": [
         {
           "category": "function",

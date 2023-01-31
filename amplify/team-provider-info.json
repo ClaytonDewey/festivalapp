@@ -18,8 +18,13 @@
       },
       "function": {
         "festivalappc70e0400PostConfirmation": {
-          "GROUP": "Admin"
+          "GROUP": "Admin",
+          "deploymentBucketName": "amplify-festivalapp-dev-121340-deployment",
+          "s3Key": "amplify-builds/festivalappc70e0400PostConfirmation-42366a7849656f537851-build.zip"
         }
+      },
+      "api": {
+        "festivalapp": {}
       }
     }
   }
