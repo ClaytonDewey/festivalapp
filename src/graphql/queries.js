@@ -26,20 +26,19 @@ export const getStage = /* GraphQL */ `
   }
 `;
 export const listStages = /* GraphQL */ `
-  query ListStages(
-    $filter: ModelStageFilterInput
-    $limit: Int
-    $nextToken: String
-  ) {
-    listStages(filter: $filter, limit: $limit, nextToken: $nextToken) {
+  query ListStages($filter: ModelStageFilterInput, $nextToken: String) {
+    listStages(filter: $filter, limit: 500, nextToken: $nextToken) {
       items {
         id
         name
         performances {
-          nextToken
+          items {
+            id
+            time
+            performer
+            description
+          }
         }
-        createdAt
-        updatedAt
       }
       nextToken
     }
