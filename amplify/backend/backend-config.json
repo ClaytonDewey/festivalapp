@@ -1,9 +1,55 @@
 {
+  "auth": {
+    "festivalappc70e0400": {
+      "customAuth": false,
+      "dependsOn": [
+        {
+          "attributes": [
+            "Arn",
+            "Name"
+          ],
+          "category": "function",
+          "resourceName": "festivalappc70e0400PostConfirmation",
+          "triggerProvider": "Cognito"
+        }
+      ],
+      "frontendAuthConfig": {
+        "mfaConfiguration": "OFF",
+        "mfaTypes": [
+          "SMS"
+        ],
+        "passwordProtectionSettings": {
+          "passwordPolicyCharacters": [],
+          "passwordPolicyMinLength": 8
+        },
+        "signupAttributes": [
+          "EMAIL"
+        ],
+        "socialProviders": [],
+        "usernameAttributes": [],
+        "verificationMechanisms": [
+          "EMAIL"
+        ]
+      },
+      "providerPlugin": "awscloudformation",
+      "service": "Cognito"
+    }
+  },
   "function": {
     "festivalappc70e0400PostConfirmation": {
       "build": true,
       "providerPlugin": "awscloudformation",
       "service": "Lambda"
+    }
+  },
+  "parameters": {
+    "AMPLIFY_function_festivalappc70e0400PostConfirmation_GROUP": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "festivalappc70e0400PostConfirmation"
+        }
+      ]
     }
   }
 }
