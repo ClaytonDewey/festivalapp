@@ -1,0 +1,50 @@
+{
+  "version": "1",
+  "cognitoConfig": {
+    "identityPoolName": "festivalappc70e0400_identitypool_c70e0400",
+    "allowUnauthenticatedIdentities": false,
+    "resourceNameTruncated": "festivc70e0400",
+    "userPoolName": "festivalappc70e0400_userpool_c70e0400",
+    "autoVerifiedAttributes": [
+      "email"
+    ],
+    "mfaConfiguration": "OFF",
+    "mfaTypes": [
+      "SMS Text Message"
+    ],
+    "smsAuthenticationMessage": "Your authentication code is {####}",
+    "smsVerificationMessage": "Your verification code is {####}",
+    "emailVerificationSubject": "Your verification code",
+    "emailVerificationMessage": "Your verification code is {####}",
+    "defaultPasswordPolicy": false,
+    "passwordPolicyMinLength": 8,
+    "passwordPolicyCharacters": [],
+    "requiredAttributes": [
+      "email"
+    ],
+    "aliasAttributes": [],
+    "userpoolClientGenerateSecret": false,
+    "userpoolClientRefreshTokenValidity": 30,
+    "userpoolClientWriteAttributes": [
+      "email"
+    ],
+    "userpoolClientReadAttributes": [
+      "email"
+    ],
+    "userpoolClientLambdaRole": "festivc70e0400_userpoolclient_lambda_role",
+    "userpoolClientSetAttributes": false,
+    "sharedId": "c70e0400",
+    "resourceName": "festivalappc70e0400",
+    "authSelections": "identityPoolAndUserPool",
+    "useDefault": "default",
+    "triggers": {
+      "PostConfirmation": [
+        "add-to-group"
+      ]
+    },
+    "userPoolGroupList": [],
+    "serviceName": "Cognito",
+    "usernameCaseSensitive": false,
+    "useEnabledMfas": true
+  }
+}

@@ -1,1 +1,9 @@
-{}
+{
+  "function": {
+    "festivalappc70e0400PostConfirmation": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    }
+  }
+}
